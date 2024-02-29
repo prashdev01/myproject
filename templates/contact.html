@@ -2,5 +2,40 @@
 {% block title %} services page{% endblock title %}
 
 {% block body %}
-This is a contact block
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 rounded p-4">
+            <form class="form my-4 ">
+                <p class="title">Contact Us </p>
+                <p class="message">Thank you for contacting us please let us know your info.. </p>
+                    <label>
+                        <input class="input" type="text" name="name" placeholder="" required="">
+                        <span>Firstname</span>
+                    </label>
+                        
+                <label>
+                    <input class="input" type="email" name="email" placeholder="" required="">
+                    <span>Email</span>
+                </label> 
+                    
+                <label>
+                    <input class="input" type="text" name="phone" placeholder="" required="">
+                    <span>Phone Number</span>
+                </label>
+                <label>
+                    <input class="input" type="text" name="decs" placeholder="" required="">
+                    <span>Write Something about you </span>
+                </label>
+                <button class="submit">Submit</button>
+            </form>
+            <div class="col-md-6 rounded overflow-hidden">
+                <!-- Image -->
+                <img src="/static/img/1.jfif" class="img-fluid" alt="Image">
+              </div>
+        </div>
+
+    </div>
+    </div>
+
 {% endblock body %}
+
